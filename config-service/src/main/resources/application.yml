@@ -1,6 +1,6 @@
 
 server:
-  port: ${PORT:8082}
+  port: ${PORT:8888}
 spring:
   application:
     name: config-service
@@ -22,6 +22,6 @@ management:
       exposure:
         include: health,info
 info:
-  name: Actuator informação
+  name: Actuator informaï¿½ï¿½o
   author: Teste
   severity: Medio

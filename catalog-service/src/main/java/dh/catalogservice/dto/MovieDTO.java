@@ -1,12 +1,6 @@
-package dh.moviesservice.model;
+package dh.catalogservice.dto;
 
-import javax.persistence.*;
-
-@Entity
-public class Movie {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+public class MovieDTO {
     private Long id;
     private String name;
     private String genere;
