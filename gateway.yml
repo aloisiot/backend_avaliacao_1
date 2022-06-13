@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
       - id: catalogModule
-        uri: lb://catalog-service
+        uri: lb://CATALOG-SERVICE/
         predicates:
         - Path=/**
 
