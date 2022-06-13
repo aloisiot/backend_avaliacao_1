@@ -8,5 +8,5 @@ spring:
       - id: catalogModule
         uri: http://localhost:8083/
         predicates:
-        - Path=/catalog/**
+        - Path=/**
 
