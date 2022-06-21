@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/aloisiot/backend_avaliacao_1
+          uri: https://github.com/aloisiot/microservicos-com-spring-boot-primeiros-passos
 eureka:
   client:
     service-url:
