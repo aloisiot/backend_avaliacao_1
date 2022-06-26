@@ -8,5 +8,5 @@ spring:
       - id: catalogModule
         uri: lb://CATALOG-SERVICE/
         predicates:
-        - Path=/**
+        - Path=/catalog/**
 
