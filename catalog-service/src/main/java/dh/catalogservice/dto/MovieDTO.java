@@ -1,6 +1,8 @@
 package dh.catalogservice.dto;
 
-public class MovieDTO {
+import java.io.Serializable;
+
+public class MovieDTO implements Serializable {
     private Long id;
     private String name;
     private String genere;

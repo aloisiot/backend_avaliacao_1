@@ -3,6 +3,7 @@ package dh.moviesservice.controller;
 import dh.moviesservice.model.Movie;
 import dh.moviesservice.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +21,8 @@ public class MovieController {
 
     @PostMapping
     public ResponseEntity<Movie> save(@RequestBody Movie movie) {
-        return ResponseEntity.ok(repository.save(movie));
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(repository.save(movie));
     }
 }

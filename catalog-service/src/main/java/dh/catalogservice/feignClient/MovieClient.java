@@ -10,6 +10,6 @@ import java.util.List;
 @FeignClient(value = "movies-service")
 public interface MovieClient {
 
-    @GetMapping("/{genere}")
+    @GetMapping("/movies/{genere}")
     public List<MovieDTO> getMoviesByGenere(@PathVariable String genere);
 }

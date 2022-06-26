@@ -22,6 +22,6 @@ management:
       exposure:
         include: health,info
 info:
-  name: Actuator informa��o
+  name: Actuator informacao
   author: Teste
   severity: Medio
