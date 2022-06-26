@@ -18,11 +18,15 @@ management:
         include: health,info
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
-
   datasource:
     url: jdbc:h2:~/db_movies
     username: sa
