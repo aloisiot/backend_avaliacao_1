@@ -33,4 +33,4 @@ spring:
     password: sa
 
 queue:
-  name: teste
+  name: movies
