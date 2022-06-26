@@ -31,3 +31,6 @@ spring:
     url: jdbc:h2:~/db_movies
     username: sa
     password: sa
+
+queue:
+  name: teste
