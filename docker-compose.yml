@@ -1,0 +1,27 @@
+
+version: "3.2"
+services:
+    zipkin:
+        container_name: zipkin
+        image: openzipkin/zipkin:2
+        ports:
+          - 9411:9411
+
+    rabbitmq_service:
+        container_name: rabbitmq
+        image: rabbitmq:3-management
+        ports:
+            - 5672:5672
+            - 15672:15672
+
+    eureka_service:
+        build: eureka-server
+        container_name: eureka
+        ports:
+            - 8761:8761
+
+    config-service:
+        build: config-service
+        container_name: config-service
+        ports:
+            - 8888:8888
